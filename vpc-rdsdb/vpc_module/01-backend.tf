@@ -9,7 +9,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "my-terraformstate-landmark-buc"
+    bucket = "<>"
     key = "terraform/terraform.tfstate"
     dynamodb_table = "terraform-lock"
 
@@ -19,7 +19,7 @@ terraform {
 }
 /*
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "my-terraformstate-landmark-buc"
+  bucket = "<>"
   acl    = "private"
 
   versioning {
@@ -49,6 +49,6 @@ resource "aws_dynamodb_table" "tf_lock" {
  # Provider Block
 provider "aws" {
    region  = "us-west-1"
-   profile = "Kenmak"
+   profile = "<>"
  }
 #for var in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_SECURITY_TOKEN ; do eval unset $var ; done
