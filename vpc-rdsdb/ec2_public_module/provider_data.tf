@@ -10,13 +10,13 @@ terraform {
   # Provider Block
 provider "aws" {
     region  = "us-west-1"
-    profile = "Kenmak"
+    profile = "<>"
   }
 
 data "terraform_remote_state" "network" {
   backend = "s3"
   config = {
-    bucket = "my-terraformstate-landmark-buc"
+    bucket = "<>"
     key    = "terraform/terraform.tfstate"
     region = "us-west-1"
   }
